@@ -1,0 +1,88 @@
+/* Standard Styling Stuff */
+body {
+  background: #F0F0F0
+}
+
+h1, p {
+  font-family: 'Roboto', sans-serif; font-size: 20pt;
+  font-weight: 600;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+  color: #333333;
+}
+
+p a {
+  text-decoration: none;
+  color: #59ABE3;
+}
+
+/* Board/Square Styling */
+
+#freesquare {
+  font-family: Helvetica;
+  margin: 0 auto;
+  background: #C5EFF7;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15pt;
+}
+
+#bingotable {
+  margin: 0 auto;
+  text-align: center;
+  width: 800px;
+  height: 800px;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td {
+  font-family: Helvetica;
+  margin: 0 auto;
+  text-align: center;
+  border: 3px solid black;
+  width: 20%;
+}
+
+.title_bg {
+  background: #89C4F4;
+  color: #FFFFFF;
+  font-size:50px;
+}
+
+.center {
+    /* Center the image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.square {
+  /* Set square size */
+  height:160px;
+  width:160px;
+}
+
+
+/* Some cool Print Stuff */
+.print-only {
+  /* Only show this on the printed document, part 1 */
+  display: none;
+  font-size: 14pt;
+}
+
+@media print {
+    table {page-break-inside: avoid;}  /* Prevent this from breaking the table */
+    .no-print, .no-print * {
+        /* Only show this on the web */
+        display: none !important;
+    }
+    .print-only {
+      /* Only show this on the printed document, part 1 */
+      display: block !important;
+    }
+}
+
+

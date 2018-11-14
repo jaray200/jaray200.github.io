@@ -1,0 +1,68 @@
+<html>
+
+	<head>
+		<link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+		<link href="bingo-css.css" rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+		<meta charset="utf-8" />
+		<title>Adjudicator Bingo</title>
+	</head>
+
+	<body onload="fillBoard()">
+		<div id="container">
+		<div id="header">
+			<img src="bingo.svg" style="max-width: 320px;margin-bottom: 30px;" class="center no-print">
+		</div>
+		<div id="content">
+			<table id="bingotable">
+				<tr>
+					<th class="title_bg" style="background: #1F3A93">B</th>
+					<th class="title_bg" style="background: #8E44AD">I</th>
+					<th class="title_bg" style="background: #D91E18">N</th>
+					<th class="title_bg" style="background: #F39C12">G</th>
+					<th class="title_bg" style="background: #26A65B">O</th>
+				</tr>
+				<tr>
+					<td class="square" id="square0"> &nbsp;</td>
+					<td class="square" id="square1"> &nbsp;</td>
+					<td class="square" id="square2"> &nbsp;</td>
+					<td class="square" id="square3"> &nbsp;</td>
+					<td class="square" id="square4"> &nbsp;</td>
+				</tr>
+				<tr>
+					<td class="square" id="square5"> &nbsp;</td>
+					<td class="square" id="square6"> &nbsp;</td>
+					<td class="square" id="square7"> &nbsp;</td>
+					<td class="square" id="square8"> &nbsp;</td>
+					<td class="square" id="square9"> &nbsp;</td>
+				</tr>
+				<tr>
+					<td class="square" id="square10"> &nbsp;</td>
+					<td class="square" id="square11"> &nbsp;</td>
+					<td class="square" id="freesquare">FREE</td>
+					<td class="square" id="square12"> &nbsp;</td>
+					<td class="square" id="square13"> &nbsp;</td>
+				</tr>
+				<tr>
+					<td class="square" id="square14"> &nbsp;</td>
+					<td class="square" id="square15"> &nbsp;</td>
+					<td class="square" id="square16"> &nbsp;</td>
+					<td class="square" id="square17"> &nbsp;</td>
+					<td class="square" id="square18"> &nbsp;</td>
+				</tr>
+				<tr>
+					<td class="square" id="square19"> &nbsp;</td>
+					<td class="square" id="square20"> &nbsp;</td>
+					<td class="square" id="square21"> &nbsp;</td>
+					<td class="square" id="square22"> &nbsp;</td>
+					<td class="square" id="square23"> &nbsp;</td>
+				</tr>
+			</table>
+		</div>
+		<p class="no-print"><a href="#" onclick="anotherCard()">Redo</a> or <a href="#" onclick="window.print()">Print</a></p>
+		<script src="options.js"></script>
+		<script src="bingo-js.js"></script>
+	</body>
+</html>
