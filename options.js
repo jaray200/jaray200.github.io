@@ -31,7 +31,7 @@ var options = [
 	'Comment about the stakes: "Raise the stakes"',
 	'Make the judge cry',
 	'Comment about transitions',
-	'Comment abou spatial awareness',
+	'Comment about spatial awareness',
 	'Make the judge change their opinion about a piece ("I hate this, but you made me love it!")',
 	'Director defends choices',
 	'"The audience loved that!"',
